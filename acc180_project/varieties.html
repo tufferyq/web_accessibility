@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Varieties - Raspberry World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Raspberry World</div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="varieties.html">Varieties</a></li>
+                <li><a href="growing.html">Growing</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="author.html">About the author</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" role="main">
+        <h1>Popular Raspberry Varieties</h1>
+        <section>
+            <h2>Red Raspberries</h2>
+            <img src="img/red_raspberry.jpg" alt="Cluster of red raspberries" width="300" height="200">
+            <p>Red raspberries are the most common variety, known for their sweet-tart flavor and vibrant color.</p>
+        </section>
+        <section>
+            <h2>Black Raspberries</h2>
+            <img src="img/black_raspberry.jpg" alt="Cluster of black raspberries" width="300" height="200">
+            <p>Black raspberries have a unique, rich flavor and are packed with antioxidants.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quentin Tuffery. All rights reserved.</p>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">Back to Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', 
+            menuToggle.classList.contains('active'));
+        });
+        });
+    </script>
+</body>
+</html>

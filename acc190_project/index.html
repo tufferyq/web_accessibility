@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry World - Home</title>
+
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <div class="logo">Raspberry World</div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#varieties">Varieties</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#growing-tips">Growing Tips</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main id="main-content" role="main">
+        <h2>Discover the Delicious World of Raspberries</h2>
+        <img src="img/raspberries.png" alt="A bowl of fresh raspberries" width="600" height="400">
+        <p>Welcome to Raspberry World, your ultimate resource for all things raspberry! Explore our site to learn about different varieties, growing tips, and delicious recipes.</p>
+    
+        <h2 id="varieties">Popular Raspberry Varieties</h2>
+        <section>
+            <h3>Red Raspberries</h3>
+            <img src="img/red_raspberry.jpg" alt="Cluster of red raspberries" width="300" height="200">
+            <p>Red raspberries are the most common variety, known for their sweet-tart flavor and vibrant color.</p>
+        </section>
+        <section>
+            <h3>Black Raspberries</h3>
+            <img src="img/black_raspberry.jpg" alt="Cluster of black raspberries" width="300" height="200">
+            <p>Black raspberries have a unique, rich flavor and are packed with antioxidants.</p>
+        </section>
+        
+        <h2 id="recipes">Delicious Raspberry Recipes</h2>
+        <section>
+            <h3>Raspberry Jam</h3>
+            <img src="img/raspberry_jam.jpg" alt="Jar of homemade raspberry jam" width="300" height="200">
+            <p>Learn how to make delicious homemade raspberry jam with just three ingredients!</p>
+        </section>
+        <section>
+            <h3>Raspberry Smoothie</h3>
+            <img src="img/raspberry_smoothie.jpg" alt="Glass of raspberry smoothie" width="300" height="200">
+            <p>Start your day with a refreshing and healthy raspberry smoothie.</p>
+        </section>
+        <section>
+            <h3>Small Raspberry Tarts</h3>
+            <img src="img/raspberry_tart.jpg" alt="Small raspberry tarts" width="300" height="200">
+            <p>These small raspberry tarts make the perfect dessert for any occasion.</p>
+        </section>
+
+        <h2 id="growing-tips">Tips for Growing Raspberries</h2>
+        <img src="img/raspberry_bush.jpg" alt="Healthy raspberry plant with fruits" width="400" height="300">
+        <ul>
+            <li>Choose a sunny location with well-draining soil.</li>
+            <li>Plant raspberries in early spring.</li>
+            <li>Water regularly, especially during fruit development.</li>
+            <li>Prune annually to encourage healthy growth.</li>
+        </ul>   
+
+        <hr noshade="noshade">
+        
+        <section class="acc-statement">
+            <h2 id="accessibility">Accessibility Statement for <span class="basic-information website-name">Raspberry World</span></h2>
+                <p>
+                    This is an accessibility statement from <span class="basic-information organization-name">Raspberry World</span>.
+                </p>
+            <section>
+                <h3>Measures to support accessibility</h3>
+                    <p>
+                        <span class="basic-information organization-name">Raspberry World</span>
+                        takes the following measures to ensure accessibility of
+                        <span class="basic-information website-name">Raspberry World</span>:
+                    </p>
+                        <ul class="organizational-effort accessibility-measures">
+                            <li>Include accessibility as part of our mission statement.</li>
+                            <li>Include accessibility throughout our internal policies.</li>
+                            <li>Assign clear accessibility goals and responsibilities.</li>
+                        </ul>
+            </section>
+            <section>
+                <h3>Conformance status</h3>
+                <p>
+                    The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.
+                    <span class="basic-information website-name">WEBSITE_NAME</span>
+                    is
+                    <span class="basic-information conformance-status" data-printfilter="lowercase">partially conformant</span>
+                    with
+                    <span class="basic-information conformance-standard"><span data-negate="">WCAG 2.1 level AA</span>.</span>
+                    <span>
+                    <span class="basic-information conformance-status">Partially conformant</span>
+                    means that
+                    <span class="basic-information conformance-meaning">some parts of the content do not fully conform to the accessibility standard</span>.
+                </span>
+                </p>
+            </section>
+            <section>
+                <h3>Feedback</h3>
+                    <p>
+                        We welcome your feedback on the accessibility of
+                        <span class="basic-information website-name">Raspberry World</span>.
+                        Please let us know if you encounter accessibility barriers on
+                        <span class="basic-information website-name">Raspberry World</span>:
+                    </p>
+                    <ul class="basic-information feedback h-card">
+                        <li>
+                        Phone:
+                        <span class="phone-number p-tel">+33 678 008 374</span>
+                    </li>
+                        <li>
+                        E-mail:
+                        <a class="email u-email" href="mailto:quentin.tuffery@tuni.fi">quentin.tuffery@tuni.fi</a>
+                    </li>
+                    </ul>
+                </section>
+                <section>
+                <h3>Date</h3>
+                <p>
+                    This statement was created on
+                    <span class="basic-information statement-created-date">13 November 2024</span>
+                </p>
+            </section>
+        </section>
+    
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2024 Raspberry World. All rights reserved.</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">Back to Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', 
+            menuToggle.classList.contains('active'));
+        });
+        });
+    </script>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+main, section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    
+}
+
+h1, h2, h3 {
+    color: #c41e3a;
+    scroll-margin-top: 100px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c41e3a;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #c41e3a;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #0d6efd;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #c41e3a;
+    transition: all 0.3s ease-in-out;
+  }
+
+footer {
+    background-color: #f8e3e6;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c41e3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+    background-color: #a3162f;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0d6efd;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      width: 100%;
+      height: calc(100% - 80px);
+      background-color: #fff;
+      transition: 0.3s;
+      overflow-y: auto;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+  
+    nav.active {
+      right: 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+main, section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    
+}
+
+h1, h2, h3 {
+    color: #c41e3a;
+    scroll-margin-top: 100px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c41e3a;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #c41e3a;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #0d6efd;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #c41e3a;
+    transition: all 0.3s ease-in-out;
+  }
+
+footer {
+    background-color: #f8e3e6;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c41e3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+    background-color: #a3162f;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0d6efd;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      width: 100%;
+      height: calc(100% - 80px);
+      background-color: #fff;
+      transition: 0.3s;
+      overflow-y: auto;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+  
+    nav.active {
+      right: 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+</style>

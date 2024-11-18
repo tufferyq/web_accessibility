@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Raspberry World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Raspberry World</div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="varieties.html">Varieties</a></li>
+                <li><a href="growing.html">Growing</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="author.html">About the author</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" role="main">
+        <h1>About the author - Quentin Tuffery</h1>
+        <img src="img/quentin.jpg" alt="Face of Quentin Tuffery, author of the website" width="200" height="200">
+        
+        <h3>Studies</h3>
+        <p>Quentin is a french IT (information technology) student for the University of Technology of Troyes (UTT). He is actually in his 4th year of engineering degree</p>
+
+        <h3>Personal life</h3>
+        <p>Quentin's personal life is still very myserious. However, it has been heard that he had parents, and that he may have brothers or sisters. 
+        <p>The source from this rumor remains unknows, which makes it difficult to attest the veracity of this information</p>
+
+        <h3>Professional life</h3>
+        <p>Quentin is currently seeing for a six-month internship, in the public or private field. 
+        <p>He is planning to work either in Troyes or Paris. He really tries to find a company whose project can have a positive impact on society and/or environment</p>
+    
+        <h3>But what about raspberries</h3>
+        <p>Quentin once said that he enjoyed raspberries very much. Some rumors say that it is his favorite fruit for several reasons :</p>
+        <ul>
+            <li>The wonderful red/pink color of raspberries</li>
+            <li>Their tiny and cute size</li>
+            <li>Their awesome taste</li>
+            <li>They remind him of nice summer and autumn feelings</li>
+        </ul>
+        <img src="img/rasp_cute.png" alt="Two red raspberries with a smiling face" height="200" width="300">
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 Quentin Tuffery. All rights reserved.</p>
+    </footer><button id="back-to-top" aria-label="Back to top">Back to Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', 
+            menuToggle.classList.contains('active'));
+        });
+        });
+    </script>
+</body>
+</html>
